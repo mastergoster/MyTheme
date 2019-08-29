@@ -1,0 +1,23 @@
+/*
+Theme Name: My theme
+Theme URI: https://apprendre.co/mytheme
+Author: Moi
+Author URI: https://apprendre.co
+Description: cool un super theme
+Version: 1.0
+License: MIT
+Text Domain: mytheme
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #f1f1f1;
+    color: #23282d;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
