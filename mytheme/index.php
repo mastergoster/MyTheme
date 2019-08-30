@@ -23,7 +23,7 @@
                 <div id="loop">
                     <?php while (have_posts()) : the_post(); ?>
                         <article>
-                            <h1><?php the_title(); ?></h1>
+                            <h2><?php the_title(); ?></h2>
                             <p>Publié le <?php the_time('d/m/Y'); ?><?php if (!is_page()) : ?> dans <?php the_category(', '); ?><?php endif; ?></p>
                             <?php if (is_singular()) : ?>
                                 <?php the_content(); ?>
@@ -43,9 +43,11 @@
         </section>
 
         <aside id="sidebar">
+            <?php dynamic_sidebar('main-sidebar'); ?>
         </aside>
     </div>
     <footer id="footer">
+        <?php dynamic_sidebar('footer-sidebar'); ?>
     </footer>
     <?php wp_footer(); ?>
 </body>
